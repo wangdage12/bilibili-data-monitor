@@ -77,6 +77,7 @@
           </template>
         </el-table-column>
       </el-table>
+      <el-link type="primary" href="https://github.com/wangdage12/bilibili-data-monitor" target="_blank" style="margin-top: 10px">Github仓库</el-link>
     </el-card>
   </div>
   <!-- 详情页 -->
@@ -343,6 +344,10 @@ const goBack = () => {
 }
 const handleSearch = () => {
   console.log('搜索内容:', keyword.value)
+  if (!keyword.value) {
+    ElMessage.warning('请输入搜索内容')
+    return
+  }
   tableLoading.value = true
   // 调用搜索接口
   fetchTasks(keyword.value)
