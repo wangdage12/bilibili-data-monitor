@@ -5,7 +5,7 @@
 <img width="1905" height="370" alt="PixPin_2025-09-20_17-12-41 00_00_04_14 Still001" src="https://github.com/user-attachments/assets/7a933a93-8910-477a-9582-3d5f5483d835" />
 <img width="1920" height="1080" alt="PixPin_2025-09-20_17-12-41 00_00_06_17 Still002" src="https://github.com/user-attachments/assets/c7644a24-0f97-4748-9e87-4598441916ad" />
 
-> 有关该项目的动态，请查看[http://sserver.wdg.cloudns.ch:8088/category/bilibili-data-monitor/](http://server.wdg.cloudns.ch:8088/category/bilibili-data-monitor/)
+> 有关该项目的动态，请查看[http://server.wdg.cloudns.ch:8088/category/bilibili-data-monitor/](http://server.wdg.cloudns.ch:8088/category/bilibili-data-monitor/)
 
 ## 启动和构建前端
 > 需要先安装nodejs
@@ -52,6 +52,7 @@ python main.py
 
 ## 部署
 构建好前端和准备好api以后，在dist目录中创建`apiconfig.json`，为了方便，该文件用于前端获取apiurl，请填写你的api地址  
+**注意不要在apiurl末尾添加`/`**
 ```json
 {
   "apiurl": "api地址"
