@@ -1,0 +1,6 @@
+APScheduler==3.11.0
+coloredlogs==15.0.1
+filelock==3.19.1
+Flask==3.1.2
+Flask-Cors==4.0.1
+Requests==2.32.5
